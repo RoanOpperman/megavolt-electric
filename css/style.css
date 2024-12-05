@@ -1,0 +1,49 @@
+.header-background{
+    background-image: url("../assets/images/1x.jpg");
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+/* Portrait Smartphones (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Styles for portrait smartphones */
+    .header-background{
+        background-image: url("../assets/images/3x.jpg");
+        background-position:-450px;
+        height: 600px;
+    }
+}
+
+/* Landscape Smartphones (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Styles for landscape smartphones */
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets */
+}
+
+/* Small Laptops (1025px - 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    /* Styles for small laptops */
+    .header-background{
+        background-image: url("../assets/images/3x.jpg");
+        background-position:-450px;
+        height: 600px;
+    }
+}
+
+/* Large Laptops and Desktops (1201px - 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    /* Styles for large laptops and desktops */
+    .header-background{
+        background-image: url("../assets/images/3x.jpg");
+        height: 700px;
+    }
+}
+
+/* Ultra-Wide Screens (1601px and above) */
+@media (min-width: 1601px) {
+    /* Styles for ultra-wide screens */
+}
