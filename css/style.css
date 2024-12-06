@@ -1,3 +1,17 @@
+
+/*==========================================================================================
+
+Root
+
+==========================================================================================*/
+:root {
+    --primary-color: #00aeed;
+    --secondary-color: #e20079;
+  }
+  
+body{
+    background-color:var(--primary-color);
+}
 .header-background{
     background-image: url("../assets/images/1x.jpg");
     width: 100%;
