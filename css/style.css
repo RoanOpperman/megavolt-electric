@@ -27,14 +27,244 @@ header {
 }
 nav {
   position: fixed;
-
+  height: 11%;
   background-color: var(--primary-color);
   width: 100vw;
   top: 0;
   box-shadow: 0px 10px 20px rgb(0, 80, 110, 0.25);
 }
+@keyframes open-navbar-mobile {
+  0% {
+    height: 11%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes close-navbar-mobile {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 11%;
+  }
+}
+.navbar-mobile-animate-open {
+  animation: open-navbar-mobile 0.8s;
+}
+.navbar-mobile-animate-close {
+  animation: close-navbar-mobile 0.4s;
+}
 #nav-container {
   display: flex;
+  flex-direction: column;
+}
+#home-and-mobile {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 10s;
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-in 0.3s;
+}
+#nav-menu ul li {
+  text-align: center;
+}
+#nav-menu ul li a {
+  display: inline-block;
+  padding: 15px 45px;
+  text-decoration: none;
+  /* background-color: #e20079; */
+  color: white;
+  font-family: "Questrial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@keyframes menu-btn-animate-to-x-line-one {
+  0% {
+    top: 0%;
+    transform: rotate(0deg);
+  }
+  50% {
+    top: 40%;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 40%;
+    transform: rotate(45deg);
+  }
+}
+@keyframes menu-btn-animate-to-x-line-two {
+  0% {
+    top: 50%;
+    transform: rotate(0deg);
+  }
+  50% {
+    top: 40%;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 40%;
+    transform: rotate(-45deg);
+  }
+}
+@keyframes menu-btn-animate-to-x-line-three {
+  0% {
+    top: 100%;
+    transform: rotate(0deg);
+  }
+  50% {
+    top: 40%;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 40%;
+    transform: rotate(-45deg);
+  }
+}
+@keyframes menu-btn-animate-to-burger-line-one {
+  0% {
+    top: 52%;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 52%;
+    transform: translateY(-50%);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0%;
+    transform: translateY(50%);
+    transform: rotate(0deg);
+  }
+}
+@keyframes menu-btn-animate-to-burger-line-two {
+  0% {
+    top: 40%;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
+  }
+  50% {
+    top: 52%;
+    transform: translateY(-50%);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 52%;
+    transform: translateY(-50%);
+    transform: rotate(0deg);
+  }
+}
+@keyframes menu-btn-animate-to-burger-line-three {
+  0% {
+    top: 52%;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
+  }
+  50% {
+    top: 52%;
+    transform: translateY(-50%);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 100%;
+    transform: translateY(-100%);
+    transform: rotate(0deg);
+  }
+}
+
+#nav-mobile-menu-button {
+  top: 10px;
+  margin-right: 10px;
+  position: relative;
+  width: 40px;
+  height: 25px;
+  /* background-color: grey; */
+}
+.nav-mobile-menu-line {
+  position: absolute;
+  border-radius: 3px;
+  width: 100%;
+  height: 6px;
+  background-color: white;
+}
+.nav-mobile-menu-line-one {
+  top: 0%;
+  transform: translateY(0%);
+  transform: rotate(0deg);
+}
+.nav-mobile-menu-line-two {
+  top: 50%;
+  transform: translateY(0%);
+  transform: rotate(0deg);
+}
+.nav-mobile-menu-line-three {
+  top: 100%;
+  transform: translateY(-100%);
+  transform: rotate(0deg);
+}
+.nav-mobile-menu-line-one-burger {
+  animation: menu-btn-animate-to-burger-line-one 1s;
+  top: 0%;
+  transform: translateY(0%);
+  transform: rotate(0deg);
+}
+.nav-mobile-menu-line-two-burger {
+  animation: menu-btn-animate-to-burger-line-two 1s;
+  top: 50%;
+  transform: translateY(0%);
+  transform: rotate(0deg);
+}
+.nav-mobile-menu-line-three-burger {
+  animation: menu-btn-animate-to-burger-line-three 1s;
+  top: 100%;
+  transform: translateY(-100%);
+  transform: rotate(0deg);
+}
+.nav-mobile-menu-line-one-x {
+  animation: menu-btn-animate-to-x-line-one 1s;
+  top: 40%;
+  transform: translateY(-60%);
+  transform: rotate(45deg);
+}
+.nav-mobile-menu-line-two-x {
+  animation: menu-btn-animate-to-x-line-two 1s;
+  top: 40%;
+  transform: translateY(-60%);
+  transform: rotate(135deg);
+}
+.nav-mobile-menu-line-three-x {
+  animation: menu-btn-animate-to-x-line-three 1s;
+  top: 40%;
+  transform: translateY(-60%);
+  transform: rotate(135deg);
 }
 /* Portrait Smartphones (320px - 480px) */
 @media (min-width: 320px) and (max-width: 480px) {
@@ -55,24 +285,48 @@ nav {
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Styles for tablets */
 }
+@media (max-width: 1025px) {
+  #remove-about-services {
+    display: none;
+  }
+  .remove-from-document {
+    display: none;
+  }
+}
 @media (min-width: 1025px) {
+  #remove-about-services {
+    display: block;
+  }
+  nav {
+    position: fixed;
+    height: 11%;
+  }
   #nav-container {
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px 4%;
+  }
+  #nav-mobile-menu-button {
+    display: none;
   }
   #nav-menu {
     background-color: var(--primary-color);
     padding: 0px 4% 0px 4%;
   }
   #nav-menu ul li a {
-    display: block;
+    display: inline-block;
     padding: 35px 45px;
     text-decoration: none;
+    /* background-color: #e20079; */
     color: white;
     font-family: "Questrial", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
+  }
+  #nav-menu ul li a {
+    display: inline-block;
+    padding: 35px 45px;
   }
   #nav-menu > ul > li:hover {
     position: relative;
@@ -93,12 +347,13 @@ nav {
     text-align: center;
     padding-inline-start: 0px;
   }
+
   #nav-menu ul li ul.dropdown {
     /* width: 100%; */
-    /* margin-top: 22px; */
+    margin-top: 2px;
     background-color: var(--primary-color);
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; */
     display: none;
     box-shadow: 0px 0px 120px -50px var(--secondary-color);
     overflow: hidden;

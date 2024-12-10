@@ -16,27 +16,42 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
       <div class="header-background"></div>
       <nav>
         <div id="nav-container">
-          <a
-            href="index.html"
-            title="Megavolt Electric - Calgary's residential electricians"
-            aria-label="megavolt electric home page"
-          >
-            <img
-              src="assets/logos/01_MVE_main_logo_nav.png"
-              alt="Go to megavolt electric home page"
-            />
-          </a>
-
+          <div id="home-and-mobile">
+            <a
+              href="index.html"
+              title="Megavolt Electric - Calgary's residential electricians"
+              aria-label="megavolt electric home page"
+            >
+              <img
+                src="assets/logos/01_MVE_main_logo_nav.png"
+                alt="Go to megavolt electric home page"
+              />
+            </a>
+            <div id="nav-mobile-menu-button">
+              <div
+                id="nav-m-menu-line-one"
+                class="nav-mobile-menu-line-one nav-mobile-menu-line"
+              ></div>
+              <div
+                id="nav-m-menu-line-two"
+                class="nav-mobile-menu-line-two nav-mobile-menu-line"
+              ></div>
+              <div
+                id="nav-m-menu-line-three"
+                class="nav-mobile-menu-line-three nav-mobile-menu-line"
+              ></div>
+            </div>
+          </div>
           <div id="nav-menu">
             <ul>
-              <li>
+              <li class="nav-menu-items remove-from-document">
                 <a
                   id="services-nav-item"
                   class="nav-main-menu-item"
@@ -45,28 +60,31 @@
                   >Services</a
                 >
                 <ul class="dropdown" aria-label="Services Submenu">
-                  <li>
+                  <li
+                    id="remove-about-services"
+                    class="nav-menu-items remove-from-document"
+                  >
                     <a
                       href="pages/about-megavolt-residential-commercial-services.html"
                       aria-label="learn about all our services"
                       >About Services</a
                     >
                   </li>
-                  <li>
+                  <li class="nav-menu-items remove-from-document">
                     <a
                       href="pages/residential-services.html"
                       aria-label="residential services"
                       >Residential</a
                     >
                   </li>
-                  <li>
+                  <li class="nav-menu-items remove-from-document">
                     <a
                       href="pages/commercial-services.html"
                       aria-label="commercial services"
                       >Commercial</a
                     >
                   </li>
-                  <li>
+                  <li class="nav-menu-items remove-from-document">
                     <a
                       href="pages/emergency-services.html"
                       aria-label="emergency services"
@@ -75,17 +93,17 @@
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="nav-menu-items remove-from-document">
                 <a href="pages/about.html" aria-label="learn all about megavolt"
                   >About</a
                 >
               </li>
-              <li>
+              <li class="nav-menu-items remove-from-document">
                 <a href="pages/contact-us.html" aria-label="contact megavolt"
                   >Contact Us</a
                 >
               </li>
-              <li>
+              <li class="nav-menu-items remove-from-document">
                 <a href="pages/blog.html" aria-label="the megavolt blog"
                   >Blog</a
                 >
