@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -20,7 +20,7 @@
   </head>
   <body>
     <header>
-      <div class="header-background"></div>
+      <div id="hero-background" class="header-background"></div>
       <nav>
         <div id="nav-container">
           <div id="home-and-mobile">
@@ -112,10 +112,18 @@
           </div>
         </div>
       </nav>
-      <h1>Calgary&apos;s Trusted Residential Electricians</h1>
-      <h2>Safety & Brilliance Guaranteed</h2>
-      <button>Schedule Appointment</button>
-      <a href="tel:+14036290734"> <p>or call &lpar;403&rpar; 369-7980</p></a>
+      <div class="hero">
+        <div class="hero-headings">
+          <h1>Calgary&apos;s Trusted Residential Electricians</h1>
+          <h2>Safety & Brilliance Guaranteed</h2>
+        </div>
+        <div class="hero-CTA">
+          <button id="hero-CTA-btn">Schedule Appointment</button>
+          <a href="tel:+14036290734">
+            <p>or call &lpar;403&rpar; 369-7980</p></a
+          >
+        </div>
+      </div>
     </header>
     <main>
       <section id="about-short">
@@ -124,16 +132,23 @@
             src="assets/images/MVE-Chris-greeting-front-door_web-optimized-830x550.jpg"
             alt="Megavolt Electric technician greeting a homeowner in Calgary"
           />
-          <h2>Locally Owned and Operated</h2>
-          <p>
-            At Megavolt Electric, we know how important the safety of your home
-            and business is to you. We want you to know that our team has the
-            qualifications, experience and desire to guide you through your
-            electrical project. Our locally owned and operated business respects
-            and values our customers. We will diagnose your electrical issues,
-            provide a transparent quote, and work around your schedule.
-          </p>
-          <button>Schedule Appointment</button>
+          <div id="about-short-body">
+            <div id="about-short-body-text">
+              <h2>Locally Owned and Operated</h2>
+              <p>
+                At Megavolt Electric, we know how important the safety of your
+                home and business is to you. We want you to know that our team
+                has the qualifications, experience and desire to guide you
+                through your electrical project. Our locally owned and operated
+                business respects and values our customers. We will diagnose
+                your electrical issues, provide a transparent quote, and work
+                around your schedule.
+              </p>
+            </div>
+            <div id="about-short-cta">
+              <button id="about-short-btn">Schedule Appointment</button>
+            </div>
+          </div>
         </div>
       </section>
       <section id="testimonials">
@@ -151,9 +166,11 @@
           <div id="testimonials-controls"></div>
         </div>
       </section>
-      <section id="residential-commericial">
+      <section id="residential-commercial">
         <h2>We Proudly Service Calgary and Surrounding Areas</h2>
-        <img src="" alt="map of Calgary and it's surrounding areas" />
+        <div id="map-container">
+          <img src="" alt="map of Calgary and it's surrounding areas" />
+        </div>
       </section>
       <section id="some-services">
         <div class="section-card">
