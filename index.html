@@ -14,16 +14,18 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star" />
+    <link rel="stylesheet" href="css/utility-classes.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
-      <div id="hero-background" class="header-background"></div>
       <nav>
         <div id="nav-container">
           <div id="home-and-mobile">
+            <!-- WEBSITE LOGO/HOME BUTTON -->
             <a
               href="index.html"
               title="Megavolt Electric - Calgary's residential electricians"
@@ -34,6 +36,7 @@
                 alt="Go to megavolt electric home page"
               />
             </a>
+            <!-- MOBILE MENU OPEN AND CLOSE BUTTON: burger and X -->
             <div id="nav-mobile-menu-button">
               <div
                 id="nav-m-menu-line-one"
@@ -49,6 +52,7 @@
               ></div>
             </div>
           </div>
+          <!-- NAVIGATION MENU -->
           <div id="nav-menu">
             <ul>
               <li class="nav-menu-items remove-from-document">
@@ -59,6 +63,7 @@
                   aria-label="Open Services submenu"
                   >Services</a
                 >
+                <!-- NAVIGATION SUB-MENU -->
                 <ul class="dropdown" aria-label="Services Submenu">
                   <li
                     id="remove-about-services"
@@ -112,48 +117,108 @@
           </div>
         </div>
       </nav>
-      <div class="hero">
-        <div class="hero-headings">
-          <h1>Calgary&apos;s Trusted Residential Electricians</h1>
-          <h2>Safety & Brilliance Guaranteed</h2>
+      <!-- HERO: BACKGROUND, H1 , H2 , CTA DIV, BUTTON, MOBILE PHONE NUMBER, LAPTOP & DESKTOP PHONE NUMBER -->
+      <div id="hero">
+        <a href="tel:+14036290734">
+          <div id="hero-phone-number-mobile">
+            <p>&lpar;403&rpar; 369-7980</p>
+          </div>
+        </a>
+        <div id="hero-bg-image">
+          <img src="assets/images/3x.jpg" alt="" />
+          <img
+            class="hidden"
+            src="assets/images/Hero lights on 3x.jpg"
+            alt=""
+          />
         </div>
-        <div class="hero-CTA">
-          <button id="hero-CTA-btn">Schedule Appointment</button>
-          <a href="tel:+14036290734">
-            <p>or call &lpar;403&rpar; 369-7980</p></a
-          >
+        <div id="hero-content">
+          <div class="hero-headings">
+            <h1>Calgary&apos;s Trusted Residential Electricians</h1>
+            <h2>Safety & Brilliance Guaranteed</h2>
+          </div>
+          <div class="hero-CTA">
+            <button id="hero-CTA-btn">Schedule Appointment</button>
+            <a href="tel:+14036290734">
+              <p class="hidden non-mobile-phone-number">
+                or call &lpar;403&rpar; 369-7980
+              </p></a
+            >
+          </div>
         </div>
       </div>
     </header>
-    <main>
-      <section id="about-short">
-        <div class="section-card">
-          <img
-            src="assets/images/MVE-Chris-greeting-front-door_web-optimized-830x550.jpg"
-            alt="Megavolt Electric technician greeting a homeowner in Calgary"
-          />
-          <div id="about-short-body">
-            <div id="about-short-body-text">
-              <h2>Locally Owned and Operated</h2>
-              <p>
-                At Megavolt Electric, we know how important the safety of your
-                home and business is to you. We want you to know that our team
-                has the qualifications, experience and desire to guide you
-                through your electrical project. Our locally owned and operated
-                business respects and values our customers. We will diagnose
-                your electrical issues, provide a transparent quote, and work
-                around your schedule.
-              </p>
-            </div>
-            <div id="about-short-cta">
-              <button id="about-short-btn">Schedule Appointment</button>
-            </div>
+      <main>
+      <!-- A SHORT ABOUT SECTION FOR THE HOME PAGE -->
+      <section id="homepage-about">
+        <div class="section-container section-card section-card-light">
+          <div id="homepage-about-image">
+            <!--IMAGE OF TECHNICIAN IN BLUE SHIRT SHAKING HANDS WITH HOME OWNER-->
+            <img
+              src="assets/images/MVE-Chris-greeting-front-door_web-optimized-830x550.jpg"
+              alt="Megavolt Electric technician greeting a homeowner in Calgary"
+            />
+          </div>
+          <div id="homepage-about-body">
+            <h2>Locally Owned and Operated</h2>
+            <p>
+              At Megavolt Electric, we know how important the safety of your
+              home and business is to you. We want you to know that our team has
+              the qualifications, experience and desire to guide you through
+              your electrical project. Our locally owned and operated business
+              respects and values our customers. We will diagnose your
+              electrical issues, provide a transparent quote, and work around
+              your schedule.
+            </p>
           </div>
         </div>
+        <button>Book a Technician</button>
       </section>
-      <section id="testimonials">
-        <div>
-          <div id="five-star-rating"></div>
+      <!-- TESTIMONIALS-->
+      <section id="testimonials" >
+        <div class="section-container testitmonials-bottom-fade" >
+          <div class="testimonial-header">
+          <div class="testimonial-rating-average">
+          <p>5.0</p>
+          <div class="testimonial-heading-stars"><span class="material-symbols-rounded">
+            star
+          </span><span class="material-symbols-rounded">
+            star
+          </span><span class="material-symbols-rounded">
+            star
+          </span><span class="material-symbols-rounded">
+            star
+          </span><span class="material-symbols-rounded">
+            star
+          </span>
+          <span>(57)</span>
+        </div>
+      </div>
+      <h2>We love our work and it shows</h2>
+      </div>
+          <div class="testimoninal-cards-container ">
+          <article class="card card__content-hider--bottom">
+            <div class="profile" >
+              <p class="profile__placeholder">J</p>
+              <h2 class="profile__name">John Smith</h>
+            </div>
+            <div class="star-rating">
+                <span class="material-symbols-rounded">
+                  star
+                </span>
+                <span class="material-symbols-rounded">
+                  star
+                </span>
+                <span class="material-symbols-rounded">
+                  star
+                </span>
+                <span class="material-symbols-rounded">
+                  star
+                </span>
+                <span class="material-symbols-rounded">
+                  star
+                </span>
+            </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Perferendis, optio assumenda exercitationem dicta natus maxime
@@ -163,177 +228,502 @@
             repellendus ut vitae adipisci debitis alias, libero nulla saepe?
             Aspernatur, odio dolores.
           </p>
-          <div id="testimonials-controls"></div>
+          </article>
+        <article class="card card__content-hider--bottom">
+          <div class="profile" >
+            <p class="profile__placeholder">J</p>
+            <h2 class="profile__name">James Wright</h2>
+          </div>
+          <div class="star-rating">
+              <span class="material-symbols-rounded">
+                star
+              </span>
+              <span class="material-symbols-rounded">
+                star
+              </span>
+              <span class="material-symbols-rounded">
+                star
+              </span>
+              <span class="material-symbols-rounded">
+                star
+              </span>
+              <span class="material-symbols-rounded">
+                star
+              </span>
+          </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perferendis, optio assumenda exercitationem dicta natus maxime
+          veritatis impedit ducimus! Doloremque tempore excepturi consectetur
+          accusantium. Harum aperiam rerum numquam sapiente blanditiis
+          necessitatibus cum iusto tempora eos maxime amet ad itaque
+          repellendus ut vitae adipisci debitis alias, libero nulla saepe?
+          Aspernatur, odio dolores.
+        </p>
+      </article>
+      <article class="card card__content-hider--bottom">
+        <div class="profile" >
+          <p class="profile__placeholder">M</p>
+          <h2 class="profile__name">Michael Carter</h2>
+        </div>
+        <div class="star-rating">
+            <span class="material-symbols-rounded">
+              star
+            </span>
+            <span class="material-symbols-rounded">
+              star
+            </span>
+            <span class="material-symbols-rounded">
+              star
+            </span>
+            <span class="material-symbols-rounded">
+              star
+            </span>
+            <span class="material-symbols-rounded">
+              star
+            </span>
+        </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Perferendis, optio assumenda exercitationem dicta natus maxime
+        veritatis impedit ducimus! Doloremque tempore excepturi consectetur
+        accusantium. Harum aperiam rerum numquam sapiente blanditiis
+        necessitatibus cum iusto tempora eos maxime amet ad itaque
+        repellendus ut vitae adipisci debitis alias, libero nulla saepe?
+        Aspernatur, odio dolores.
+      </p>
+      </article>
+ 
+    <article class="card card__content-hider--bottom">
+      <div class="profile" >
+        <p class="profile__placeholder">E</p>
+        <h2 class="profile__name">Emily Cooper</h2>
+      </div>
+      <div class="star-rating">
+          <span class="material-symbols-rounded">
+            star
+          </span>
+          <span class="material-symbols-rounded">
+            star
+          </span>
+          <span class="material-symbols-rounded">
+            star
+          </span>
+          <span class="material-symbols-rounded">
+            star
+          </span>
+          <span class="material-symbols-rounded">
+            star
+          </span>
+      </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Perferendis, optio assumenda exercitationem dicta natus maxime
+      veritatis impedit ducimus! Doloremque tempore excepturi consectetur
+      accusantium. Harum aperiam rerum numquam sapiente blanditiis
+      necessitatibus cum iusto tempora eos maxime amet ad itaque
+      repellendus ut vitae adipisci debitis alias, libero nulla saepe?
+      Aspernatur, odio dolores.
+    </p>
+    </article>
+  <article class="card card__content-hider--bottom">
+    <div class="profile" >
+      <p class="profile__placeholder">D</p>
+      <h2 class="profile__name">David Brooks</h2>
+    </div>
+    <div class="star-rating">
+        <span class="material-symbols-rounded">
+          star
+        </span>
+        <span class="material-symbols-rounded">
+          star
+        </span>
+        <span class="material-symbols-rounded">
+          star
+        </span>
+        <span class="material-symbols-rounded">
+          star
+        </span>
+        <span class="material-symbols-rounded">
+          star
+        </span>
+    </div>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Perferendis, optio assumenda exercitationem dicta natus maxime
+    veritatis impedit ducimus! Doloremque tempore excepturi consectetur
+    accusantium. Harum aperiam rerum numquam sapiente blanditiis
+    necessitatibus cum iusto tempora eos maxime amet ad itaque
+    repellendus ut vitae adipisci debitis alias, libero nulla saepe?
+    Aspernatur, odio dolores.
+  </p>
+  </article>
+<article class="card card__content-hider--bottom">
+  <div class="profile" >
+    <p class="profile__placeholder">A</p>
+    <h2 class="profile__name">Anna Webb</h2>
+  </div>
+  <div class="star-rating">
+      <span class="material-symbols-rounded">
+        star
+      </span>
+      <span class="material-symbols-rounded">
+        star
+      </span>
+      <span class="material-symbols-rounded">
+        star
+      </span>
+      <span class="material-symbols-rounded">
+        star
+      </span>
+      <span class="material-symbols-rounded">
+        star
+      </span>
+  </div>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Perferendis, optio assumenda exercitationem dicta natus maxime
+  veritatis impedit ducimus! Doloremque tempore excepturi consectetur
+  accusantium. Harum aperiam rerum numquam sapiente blanditiis
+  necessitatibus cum iusto tempora eos maxime amet ad itaque
+  repellendus ut vitae adipisci debitis alias, libero nulla saepe?
+  Aspernatur, odio dolores.
+</p>
+</article>
+
+<article class="card card__content-hider--bottom">
+  <div class="profile" >
+    <p class="profile__placeholder">T</p>
+    <h2 class="profile__name">Thomas Green</h2>
+  </div>
+  <div class="star-rating">
+      <span class="material-symbols-rounded">
+        star
+      </span>
+      <span class="material-symbols-rounded">
+        star
+      </span>
+      <span class="material-symbols-rounded">
+        star
+      </span>
+      <span class="material-symbols-rounded">
+        star
+      </span>
+      <span class="material-symbols-rounded">
+        star
+      </span>
+  </div>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Perferendis, optio assumenda exercitationem dicta natus maxime
+  veritatis impedit ducimus! Doloremque tempore excepturi consectetur
+  accusantium. Harum aperiam rerum numquam sapiente blanditiis
+  necessitatibus cum iusto tempora eos maxime amet ad itaque
+  repellendus ut vitae adipisci debitis alias, libero nulla saepe?
+  Aspernatur, odio dolores.
+</p>
+</article>
+<article class="card card__content-hider--bottom">
+<div class="profile" >
+  <p class="profile__placeholder">M</p>
+  <h2 class="profile__name">Megan Hill</h2>
+</div>
+<div class="star-rating">
+    <span class="material-symbols-rounded">
+      star
+    </span>
+    <span class="material-symbols-rounded">
+      star
+    </span>
+    <span class="material-symbols-rounded">
+      star
+    </span>
+    <span class="material-symbols-rounded">
+      star
+    </span>
+    <span class="material-symbols-rounded">
+      star
+    </span>
+</div>
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Perferendis, optio assumenda exercitationem dicta natus maxime
+veritatis impedit ducimus! Doloremque tempore excepturi consectetur
+accusantium. Harum aperiam rerum numquam sapiente blanditiis
+necessitatibus cum iusto tempora eos maxime amet ad itaque
+repellendus ut vitae adipisci debitis alias, libero nulla saepe?
+Aspernatur, odio dolores.
+</p>
+</article>
+<article class="card card__content-hider--bottom">
+<div class="profile" >
+<p class="profile__placeholder">E</p>
+<h2 class="profile__name">Elizabeth Gray</h2>
+</div>
+<div class="star-rating">
+  <span class="material-symbols-rounded">
+    star
+  </span>
+  <span class="material-symbols-rounded">
+    star
+  </span>
+  <span class="material-symbols-rounded">
+    star
+  </span>
+  <span class="material-symbols-rounded">
+    star
+  </span>
+  <span class="material-symbols-rounded">
+    star
+  </span>
+</div>
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Perferendis, optio assumenda exercitationem dicta natus maxime
+veritatis impedit ducimus! Doloremque tempore excepturi consectetur
+accusantium. Harum aperiam rerum numquam sapiente blanditiis
+necessitatibus cum iusto tempora eos maxime amet ad itaque
+repellendus ut vitae adipisci debitis alias, libero nulla saepe?
+Aspernatur, odio dolores.
+</p>
+</article>
+    </div>
         </div>
       </section>
+      <!-- RESIDENTIAL & COMMERCIAL WITH MAP -->
       <section id="residential-commercial">
-        <h2>We Proudly Service Calgary and Surrounding Areas</h2>
-        <div id="map-container">
-          <img src="" alt="map of Calgary and it's surrounding areas" />
-        </div>
-      </section>
-      <section id="some-services">
-        <div class="section-card">
-          <h2>Our Expert Electrical Services in Calgary</h2>
-          <div class="some-services-card">
-            <img src="" alt="" />
-            <div>
-              <p>icon</p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
-                sequi reprehenderit quo suscipit itaque fugiat.
-              </p>
-            </div>
+        <div class="section-container section-dark">
+          <div id="map-container" class="stack">
+            <img src="assets/images/calgary-service-area-map.png" alt="" />
+            <img
+              class="hidden"
+              src="assets/images/calgary-service-area-map-residential.png"
+              alt=""
+            />
+            <img
+              class="hidden"
+              src="assets/images/calgary-service-area-map-commercial.png"
+              alt=""
+            />
+            <div id="map"></div>
           </div>
-          <div class="some-services-card">
-            <img src="" alt="" />
-            <div>
-              <p>icon</p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem minima repellendus, harum pariatur dolorum
-                facilis.
-              </p>
-            </div>
-          </div>
-          <div class="some-services-card">
-            <img src="" alt="" />
-            <div>
-              <p>icon</p>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Repellat, odit est! Accusantium cumque dignissimos ipsa!
-              </p>
-            </div>
-          </div>
-          <div class="some-services-card">
-            <img src="" alt="" />
-            <div>
-              <p>icon</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nesciunt explicabo voluptatibus doloremque architecto reiciendis
-                ipsam.
-              </p>
-            </div>
-          </div>
-          <div class="some-services-card">
-            <img src="" alt="" />
-            <div>
-              <p>icon</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-                architecto nobis iste, voluptatem provident sed.
-              </p>
-            </div>
-          </div>
-          <div class="some-services-card">
-            <img src="" alt="" />
-            <div>
-              <p>icon</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-                nesciunt accusamus numquam placeat porro eaque.
-              </p>
+          <div id="residential-commercial-body">
+            <h2>We Proudly Service Calgary and Surrounding Areas</h2>
+            <p>
+              Megavolt Electric is a friendly, reliable electrical company
+              serving Calgary and the surrounding areas. They handle everything
+              from simple residential repairs and home renovation updates to
+              commercial work, always placing safety and customer comfort first.
+              With skilled workmanship and a welcoming approach, Megavolt
+              Electric has become the go-to choice for dependable, high-quality
+              electrical solutions.
+            </p>
+            <div id="res-com-btns">
+              <button id="residential-btn" class="dark-button">
+                Residential
+              </button>
+              <button id="commercial-btn" class="dark-button">
+                Commercial
+              </button>
             </div>
           </div>
         </div>
       </section>
+      <!-- LIST OF SERVICES -->
+      <section id="homepage-services">
+        <div class="section-container section-card">
+          <div id="homepage-services-heading">
+            <h2>Our Expert Electrical Services in Calgary</h2>
+          </div>
+          <div id="homepage-services-gallery">
+            <div class="homepage-service-item stack">
+              <img src="/assets/images/ai gen/pendants-edited.webp" alt="" />
+              <div class ="homepage-service-item-body">
+                <p>icon</p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Modi, sequi reprehenderit quo suscipit itaque fugiat.
+                </p>
+              </div>
+            </div>
+            <div class="homepage-service-item stack">
+              <img src="/assets/images/ai gen/wall outlet edited.webp" alt="" />
+              <div class ="homepage-service-item-body">
+                <p>icon</p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem minima repellendus, harum pariatur dolorum
+                  facilis.
+                </p>
+              </div>
+            </div>
+            <div class="homepage-service-item stack">
+              <img
+                src="assets/images/residential-eaton-electrical-breaker-box.jpg"
+                alt=""
+              />
+              <div class ="homepage-service-item-body">
+                <p>icon</p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellat, odit est! Accusantium cumque dignissimos ipsa!
+                </p>
+              </div>
+            </div>
+            <div class="homepage-service-item stack">
+              <img
+                src="/assets/images/ai gen/security-camera-edited.webp"
+                alt=""
+              />
+              <div class ="homepage-service-item-body">
+                <p>icon</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nesciunt explicabo voluptatibus doloremque architecto
+                  reiciendis ipsam.
+                </p>
+              </div>
+            </div>
+            <div class="homepage-service-item stack">
+              <img src="/assets/images/ai gen/renovations-edited.webp" alt="" />
+              <div class ="homepage-service-item-body">
+                <p>icon</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Veniam architecto nobis iste, voluptatem provident sed.
+                </p>
+              </div>
+            </div>
+            <div class="homepage-service-item stack">
+              <img
+                src="/assets/images/ai gen/DALL·E 2024-12-13 11.38.09 - A clean and photorealistic image of an electric vehicle (EV) charging plug inserted into a charging port, with a distinct cyan color filter applied ac.webp"
+                alt=""
+              />
+              <div class ="homepage-service-item-body">
+                <p>icon</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                  nesciunt accusamus numquam placeat porro eaque.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- LIST OF QUALIFIER -->
       <section id="qualifiers">
-        <div class="qualifier-card">
-          <img src="" alt="" />
-          <div>
-            <h3>Experienced Electricians</h3>
-            <p>
-              All of our electricians are licensed and participate in ongoing
-              technical and customer service training to ensure that you are
-              always getting the best possible service.
-            </p>
+        <div id="qualifier-container" class="section-container">
+          <div class="qualifier-card">
+            <img src="" alt="" />
+            <div>
+              <h3>Experienced Electricians</h3>
+              <p>
+                All of our electricians are licensed and participate in ongoing
+                technical and customer service training to ensure that you are
+                always getting the best possible service.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="qualifier-card">
-          <img src="" alt="" />
-          <div>
-            <h3>Transparent Pricing</h3>
-            <p>
-              We will provide you with a detailed quote with no hidden costs. We
-              want you to feel confident for choosing our team.
-            </p>
+          <div class="qualifier-card">
+            <img src="" alt="" />
+            <div>
+              <h3>Transparent Pricing</h3>
+              <p>
+                We will provide you with a detailed quote with no hidden costs.
+                We want you to feel confident for choosing our team.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="qualifier-card">
-          <img src="" alt="" />
-          <div>
-            <h3>Customer Satisfaction</h3>
-            <p>
-              We will guarantee your satisfaction by exceeding your expectations
-              and will address all questions and concerns you may have.
-            </p>
+          <div class="qualifier-card">
+            <img src="" alt="" />
+            <div>
+              <h3>Customer Satisfaction</h3>
+              <p>
+                We will guarantee your satisfaction by exceeding your
+                expectations and will address all questions and concerns you may
+                have.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="qualifier-card">
-          <img src="" alt="" />
-          <div>
-            <h3>Locally Owned &Operated</h3>
-            <p>
-              We are a locally owned and operated business that cares for the
-              community and its people.
-            </p>
+          <div class="qualifier-card">
+            <img src="" alt="" />
+            <div>
+              <h3>Locally Owned &Operated</h3>
+              <p>
+                We are a locally owned and operated business that cares for the
+                community and its people.
+              </p>
+            </div>
           </div>
+          <button>Schedule Appointment</button>
         </div>
-        <button>Schedule Appointment</button>
       </section>
+      <!-- CLIENT PROCESS-->
+      <!--!STILL NEEDS TO FINALIZE DESIGN-->
       <section id="client-process">
-        <div class="client-process-card">
-          <h3>Give Us a Call</h3>
-          <p>
-            It is our mission to provide you with professional service, and we
-            want to know how we can help you.
-          </p>
-        </div>
-        <div class="client-process-card">
-          <h3>Let's Meet</h3>
-          <p>
-            We can answer your questions and concerns. We will provide you with
-            a detailed quote and timeline.
-          </p>
-        </div>
-        <div class="client-process-card">
-          <h3>Let's Begin</h3>
-          <p>
-            We will be on time, work safely and ensure our work exceeds your
-            expectations.
-          </p>
+        <div id="client-process-container" class="section-container">
+          <div class="client-process-card">
+            <h3>Give Us a Call</h3>
+            <p>
+              It is our mission to provide you with professional service, and we
+              want to know how we can help you.
+            </p>
+          </div>
+          <div class="client-process-card">
+            <h3>Let's Meet</h3>
+            <p>
+              We can answer your questions and concerns. We will provide you
+              with a detailed quote and timeline.
+            </p>
+          </div>
+          <div class="client-process-card">
+            <h3>Let's Begin</h3>
+            <p>
+              We will be on time, work safely and ensure our work exceeds your
+              expectations.
+            </p>
+          </div>
         </div>
       </section>
+      <!-- FORM -->
       <section id="form">
-        <div class="form-card">
+        <div class="section-container form-card">
           <h2>Book Your Appointment Today</h2>
           <form action="https://formspree.io/f/meoqdyaq" method="POST">
+            <div class="form-container">
             <div>
-              <label for="firstName">Name</label>
-              <input type="text" name="First name" id="firstName" required />
-              <label for="lastName">Lastname</label>
-              <input type="text" name="Last name" id="lastName" required />
+              <div>
+                <label for="firstName">Name</label>
+                <input type="text" name="First name" id="firstName" required />
+              </div>
+              <div>
+                <label for="lastName">Lastname</label>
+                <input type="text" name="Last name" id="lastName" required />
+              </div>
             </div>
             <div>
-              <label for="clientEmail">Email</label>
-              <input type="email" name="Email" id="clientEmail" />
-              <label for="clientPhone">Phone</label>
-              <input
-                type="number"
-                name="Phone number"
-                id="clientPhone"
-                required
-              />
+              <div>
+                <label for="clientEmail">Email</label>
+                <input type="email" name="Email" id="clientEmail" />
+              </div>
+              <div>
+                <label for="clientPhone">Phone</label>
+                <input
+                  type="number"
+                  name="Phone number"
+                  id="clientPhone"
+                  required
+                />
+              </div>
             </div>
-            <div>
+            <div class="test-text-area">
               <label for="tellMore">How can we help</label>
               <textarea name="Reason for service" id="tellMore"></textarea>
             </div>
-            <div>
+            <div class="form-btn">
               <button type="submit">Submit</button>
             </div>
+          </div>
           </form>
         </div>
       </section>
